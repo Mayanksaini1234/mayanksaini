@@ -1,0 +1,62 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  pointer-events: none;
+}
+
+.App {
+  background-color: var(--bg-color);
+}
+
+/* Dark Theme */
+:root {
+  --solid-text-color: #ffffff;
+  --solid-bg-color: #000000;
+  --text-color: #ffffff;
+  --sub-text-color: #eaeaea;
+  --bold-text-color: #ffffff;
+  --bg-color: #090909;
+  --pfp-img-border: #ffffff;
+  --bt-br-opa: #ffffff88;
+  --project-card-color: #1c1c1c;
+  --project-mixtext-color: #eaeaea;
+  --project-box-shadow-color: transparent;
+  --contact-input-box-color: #1c1c1c;
+  --contact-btn-color: #ffffffcc;
+}
+
+/* Light Theme */
+.lightTheme {
+  --solid-text-color: #000000;
+  --solid-bg-color: #ffffff;
+  --text-color: #000000;
+  --sub-text-color: #343a40;
+  --bold-text-color: #212529;
+  --bg-color: #f9f9f9;
+  --pfp-img-border: #2d2e32;
+  --bt-br-opa: #00000099;
+  --project-card-color: #808080;
+  --project-mixtext-color: #5a5a5a;
+  --project-box-shadow-color: #767688;
+  --contact-input-box-color: #dee2e6;
+  --contact-btn-color: #000000cc;
+}
