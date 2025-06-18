@@ -25,15 +25,15 @@ function About() {
           </p>
 
           <p className="about-text2">
-            I'm now a <strong>Full Stack Developer</strong>, specializing in the <strong>MERN stack</strong>—MongoDB, Express.js, React.js, and Node.js. With this stack, I build fast, responsive frontends and strong, scalable backends.
+            I&apos;m now a <strong>Full Stack Developer</strong>, specializing in the <strong>MERN stack</strong>—MongoDB, Express.js, React.js, and Node.js. With this stack, I build fast, responsive frontends and strong, scalable backends.
           </p>
 
           <p className="about-text2">
-            I enjoy turning ideas into working products, improving performance, and creating solutions that are practical and easy to use. I'm always open to learning, collaborating, and building things that make a real difference.
+            I enjoy turning ideas into working products, improving performance, and creating solutions that are practical and easy to use. I&apos;m always open to learning, collaborating, and building things that make a real difference.
           </p>
 
           <p className="about-text2">
-            I'm always excited to collaborate, learn, and build impactful projects. If you're looking for a passionate developer to bring your ideas to life or want to connect, feel free to reach out — <strong>let's create something amazing together!</strong>
+            I&apos;m always excited to collaborate, learn, and build impactful projects. If you&apos;re looking for a passionate developer to bring your ideas to life or want to connect, feel free to reach out — <strong>let&apos;s create something amazing together!</strong>
           </p>
         </div>
       </div>

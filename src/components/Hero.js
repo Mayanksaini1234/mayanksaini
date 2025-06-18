@@ -13,15 +13,12 @@ function Hero() {
           data-aos-offset="0"
         >
           
-          <h1>Mayank Saini</h1>
-          <h2>Full Stack Developer</h2>
+          <div className="hero-heading">
+            <h1 className="hero-greeting">Hey, I&apos;m</h1>
+            <h1 className="hero-name">Mayank Saini</h1>
+            <h2 className="hero-title">Full Stack Developer</h2>
+          </div>
           
-          <p>
-            Hi 👋, I'm a passionate Full Stack Developer from India, crafting 
-            beautiful and functional web experiences with modern technologies. 
-            I love turning ideas into reality through clean code and innovative solutions.
-          </p>
-
           <div className="hero-social-links">
             <a
               aria-label="linkedin"
