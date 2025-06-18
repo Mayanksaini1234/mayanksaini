@@ -9,16 +9,20 @@ function Hero() {
       <div className="hero-section">
         <div
           className="hero-text-container"
-          data-aos="zoom-in"
+          data-aos="fade-right"
           data-aos-offset="0"
         >
+          
+          <h1>Mayank Saini</h1>
           <h2>Full Stack Developer</h2>
+          
           <p>
-            Hi 👋, I&apos;m Mayank Saini. A passionate Full Stack Developer from
-            India. 
+            Hi 👋, I'm a passionate Full Stack Developer from India, crafting 
+            beautiful and functional web experiences with modern technologies. 
+            I love turning ideas into reality through clean code and innovative solutions.
           </p>
 
-          <span>
+          <div className="hero-social-links">
             <a
               aria-label="linkedin"
               rel="noreferrer"
@@ -43,20 +47,20 @@ function Hero() {
             >
               <Tooltip text="fa-brands fa-twitter" tooltipText="Twitter" />
             </a>
-          </span>
+          </div>
         </div>
 
-        <div className="hero-img" data-aos="zoom-in" data-aos-offset="0">
-          <Image
-            src={profilePicture}
-            alt="pictures"
-            title="Mayank's Picture"
-            width={"350"}
-            height={"350"}
-            priority
-          />
+        <div className="hero-img" data-aos="fade-left" data-aos-offset="0">
+            <Image
+              src={profilePicture}
+              alt="Mayank Saini - Full Stack Developer"
+              title="Mayank's Picture"
+              width={350}
+              height={350}
+              priority
+            />
+          </div>
         </div>
-      </div>
     </section>
   );
 }

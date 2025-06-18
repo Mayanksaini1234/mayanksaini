@@ -8,6 +8,7 @@ export default function AosInit() {
     AOS.init({
       offset: 75,
       duration: 500,
+      once: false,
     });
   }, []);
 

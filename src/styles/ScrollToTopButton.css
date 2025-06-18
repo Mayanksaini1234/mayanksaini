@@ -1,24 +1,78 @@
 .scroll-to-top-button {
     position: fixed;
-    bottom: 32px;
-    right: 32px;
-    display: none;
-    background-color: var(--text-color);
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    width: 56px;
+    height: 56px;
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: var(--radius-full);
     color: var(--bg-color);
-    border: transparent;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    font-size: var(--font-size-lg);
     cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.8);
+    z-index: 1000;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .scroll-to-top-button.visible {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
 }
-/* Responsive */
-@media screen and (max-width: 1000px) {
+
+.scroll-to-top-button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: var(--shadow-xl);
+    background: var(--gradient-secondary);
+}
+
+.scroll-to-top-button:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.scroll-to-top-button i {
+    transition: transform 0.3s ease;
+}
+
+.scroll-to-top-button:hover i {
+    transform: translateY(-2px);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .scroll-to-top-button {
-        right: 20px;
-        bottom: 20px;
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+        width: 48px;
+        height: 48px;
+        font-size: var(--font-size-base);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .scroll-to-top-button {
+        bottom: var(--space-md);
+        right: var(--space-md);
+        width: 44px;
+        height: 44px;
     }
 }

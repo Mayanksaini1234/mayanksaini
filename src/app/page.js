@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Skills from "@/components/Skills";
-import ToggleThemeButton from "@/components/ToggleThemeButton";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Contact />
       <Footer />
       <ScrollToTopButton />
-      <ToggleThemeButton />
     </div>
   );
 }

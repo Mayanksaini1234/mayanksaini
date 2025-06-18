@@ -21,12 +21,13 @@ function Contact() {
   return (
     <section id="contact">
       <div className="contact-section">
-        <p className="contact-title1" data-aos="fade-up">
-          Contact me
-        </p>
-        <p className="contact-title2" data-aos="fade-up">
-          Let&apos;s discuss about some unique projects! 🚀
-        </p>
+        <div className="contact-header" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities 
+            to be part of your visions. Let's create something amazing together!
+          </p>
+        </div>
 
         <div className="contact-information">
           <div className="ct-info-text">
@@ -35,7 +36,7 @@ function Contact() {
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className="ct-info-detail">
-                <p>E-Mail</p>
+                <p>Email</p>
                 <p>
                   <a
                     href="mailto:mayanksaini9389@gmail.com"
@@ -56,6 +57,16 @@ function Contact() {
                 <p>BulandShahr, UP, India</p>
               </div>
             </div>
+
+            <div className="ct-info" data-aos="fade-up">
+              <div className="ct-info-icon" title="Availability Icon">
+                <i className="fa-solid fa-clock"></i>
+              </div>
+              <div className="ct-info-detail">
+                <p>Availability</p>
+                <p>Open for opportunities</p>
+              </div>
+            </div>
           </div>
 
           <div className="ct-info-form">
@@ -64,8 +75,9 @@ function Contact() {
               name="contact-form"
               action="https://formsubmit.co/mayanksaini9389@gmail.com"
               method="POST"
+              data-aos="fade-up"
             >
-              <label htmlFor="email" data-aos="fade-up">
+              <label htmlFor="email">
                 Your Email:
               </label>
               <input
@@ -77,13 +89,10 @@ function Contact() {
                 autoComplete="email"
                 value={email}
                 onChange={handleInputChange}
-                style={{
-                  borderColor: isValid ? "rgba(106, 121, 124, 0)" : "red",
-                }}
-                data-aos="fade-up"
+                className={!isValid && email ? 'error' : ''}
               />
 
-              <label htmlFor="subject" data-aos="fade-up">
+              <label htmlFor="subject">
                 Subject
               </label>
               <input
@@ -94,10 +103,9 @@ function Contact() {
                 required
                 minLength={10}
                 autoComplete="on"
-                data-aos="fade-up"
               />
 
-              <label htmlFor="message" data-aos="fade-up">
+              <label htmlFor="message">
                 Message
               </label>
               <textarea
@@ -107,7 +115,6 @@ function Contact() {
                 required
                 minLength={10}
                 autoComplete="on"
-                data-aos="fade-up"
               />
 
               <input type="hidden" name="_captcha" value="true" />
@@ -118,7 +125,7 @@ function Contact() {
                 value="New submission from portfolio!"
               />
 
-              <button type="submit" data-aos="fade-up" title="Send Message">
+              <button type="submit" title="Send Message">
                 Send Message <i className="fa-regular fa-paper-plane"></i>
               </button>
             </form>

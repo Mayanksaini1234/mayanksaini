@@ -1,26 +1,27 @@
-export const frontendSkills = {
-  HTML: "fa-brands fa-html5",
-  CSS: "fa-brands fa-css3-alt",
-  JavaScript: "fa-brands fa-js",
-  React: "fa-brands fa-react",
-  "Tailwind CSS": "fa-brands fa-css3-alt",
-};
+export const allSkills = [
+  // Row 1
+  { name: 'html', filled: false },
+  { name: 'css', filled: false },
+  { name: 'javascript', filled: false },
+  { name: 'typescript', filled: false },
+  { name: 'C++', filled: false },
 
-export const backendSkills = {
-  "Node.js": "fa-brands fa-node-js",
-  "Express.js": "fa-brands fa-node-js",
-  "REST API": "fa-solid fa-code",
-  "JWT": "fa-solid fa-key",
-};
+  // Row 2
+  { name: 'react', filled: true },
+  { name: 'next', filled: true },
+  { name: 'node', filled: true },
+  { name: 'express', filled: true },
+  { name: 'tailwindcss', filled: true },
+  { name: 'bootstrap', filled: true },
 
-export const databaseSkills = {
-  MongoDB: "fa-solid fa-database",
-  MySQL: "fa-solid fa-database",
-};
+  // Row 3
+  { name: 'mongodb', filled: true },
+  // Row 4
 
-export const devOpsSkills = {
-  Git: "fa-brands fa-git-alt",
-  GitHub: "fa-brands fa-github",
-  "VS Code": "fa-solid fa-code",
-  "Postman": "fa-solid fa-paper-plane",
-};
+  { name: 'git', filled: true },
+  { name: 'github', filled: false },
+  { name: 'Vercel', filled: false },
+  { name: 'Postman', filled: false },
+
+  
+];

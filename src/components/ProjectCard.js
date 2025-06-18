@@ -5,20 +5,23 @@ function ProjectCard(props) {
   return (
     <div className="projects-card" data-aos="zoom-in" title={props.name}>
       <div className="project-img">
-        <a href={props.link} target="_blank" rel="noreferrer">
-          <Image
-            src={props.imgsrc}
-            alt={`${props.name} Preview`}
-            width={400}
-            height={240}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover'
-            }}
-            priority
-          />
-        </a>
+        <Image
+          src={props.imgsrc}
+          alt={`${props.name} Preview`}
+          width={500}
+          height={240}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }}
+          priority
+        />
+        <div className="project-img-overlay">
+          <a href={props.link} target="_blank" rel="noreferrer">
+            View Project
+          </a>
+        </div>
       </div>
 
       <div className="project-info">
@@ -38,7 +41,7 @@ function ProjectCard(props) {
         </div>
 
         <p className="project-subtitle">
-          <span>Stack</span>
+          <span>Tech Stack</span>
         </p>
 
         <div className="project-stack">
@@ -50,7 +53,7 @@ function ProjectCard(props) {
         <div className="project-links">
           <a href={props.link} target="_blank" rel="noreferrer">
             <button type="button">
-              Live <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              Live Demo <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </button>
           </a>
 

@@ -6,9 +6,8 @@ import "../styles/Projects.css";
 function Projects() {
   return (
     <section id="projects">
-      <div data-aos="fade-up">
-        <p className="contact-title1">Projects</p>
-        <p className="contact-title2">Turning Vision into Reality! 🎖️</p>
+      <div className="projects-header" data-aos="fade-up">
+        <h2>Featured Projects</h2>
       </div>
       <div className="projects-section">
         {projectsList.map((project, index) => (
