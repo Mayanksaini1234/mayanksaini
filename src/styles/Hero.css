@@ -403,3 +403,43 @@ section#home {
     transform: translateY(0);
   }
 }
+
+.hero-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  margin-top: var(--space-md);
+  padding: 0.4em 0.6em;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: #222;
+  background: #fff;
+  border: 1.5px solid #d1d5db;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s, transform 0.18s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-resume-btn i {
+  font-size: 1em;
+  transition: transform 0.18s, color 0.18s;
+}
+
+.hero-resume-btn:hover {
+  background: #f3f4f6;
+  color: #0a66c2;
+  border: 1.5px solid #0a66c2;
+  box-shadow: 0 2px 8px 0 rgba(10,102,194,0.10);
+  transform: translateY(-1px) scale(1.03);
+}
+
+.hero-resume-btn:hover i {
+  color: #0a66c2;
+  transform: translateY(1px) scale(1.1);
+}

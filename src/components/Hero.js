@@ -45,6 +45,15 @@ function Hero() {
               <Tooltip text="fa-brands fa-twitter" tooltipText="Twitter" />
             </a>
           </div>
+          <a
+            href="https://docs.google.com/document/d/1nzW8s7V0hkdsE2khSsHDWYZmOdIPHNy8jpmaSAGLzDI/edit?usp=sharing"
+            className="hero-resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View My Resume"
+          >
+            View My Resume <i className="fa-solid fa-arrow-down-long" style={{marginLeft: '0.5em'}}></i>
+          </a>
         </div>
 
         <div className="hero-img" data-aos="fade-left" data-aos-offset="0">
