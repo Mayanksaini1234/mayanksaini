@@ -38,7 +38,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`navbar-container ${isScrolled ? 'scrolled' : ''}`} data-aos="fade-down" data-aos-offset="0">
+    <div className={`navbar-container ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-content">
         <h1 className="navbar-title">
           <a className="navbar-title-link" href="/" title="Mayank Saini">
@@ -48,12 +48,7 @@ function Navbar() {
 
         {/* Desktop Navbar Design */}
         <ul className="navbar-links-container">
-          <li
-            className="navbar-items"
-            data-aos="fade-down"
-            data-aos-offset="0"
-            data-aos-delay="100"
-          >
+          <li className="navbar-items">
             <a
               href="#home"
               title="Home"
@@ -64,12 +59,7 @@ function Navbar() {
               <i className="fa-solid fa-house"></i> Home
             </a>
           </li>
-          <li
-            className="navbar-items"
-            data-aos="fade-down"
-            data-aos-offset="0"
-            data-aos-delay="150"
-          >
+          <li className="navbar-items">
             <a
               href="#about"
               title="About Me"
@@ -80,12 +70,7 @@ function Navbar() {
               <i className="fa-solid fa-user"></i> About Me
             </a>
           </li>
-          <li
-            className="navbar-items"
-            data-aos="fade-down"
-            data-aos-offset="0"
-            data-aos-delay="200"
-          >
+          <li className="navbar-items">
             <a
               href="#skills"
               title="Skills"
@@ -96,12 +81,7 @@ function Navbar() {
               <i className="fa-solid fa-code"></i> Skills
             </a>
           </li>
-          <li
-            className="navbar-items"
-            data-aos="fade-down"
-            data-aos-offset="0"
-            data-aos-delay="250"
-          >
+          <li className="navbar-items">
             <a
               href="#projects"
               title="Projects"
@@ -112,12 +92,7 @@ function Navbar() {
               <i className="fa-solid fa-wand-magic-sparkles"></i> Projects
             </a>
           </li>
-          <li
-            className="navbar-items"
-            data-aos="fade-down"
-            data-aos-offset="0"
-            data-aos-delay="300"
-          >
+          <li className="navbar-items">
             <a
               href="#contact"
               title="Contact"

@@ -188,7 +188,6 @@ section#home {
   height: 350px;
   object-fit: cover;
   border-radius: var(--radius-2xl);
-  border: 3px solid var(--border-color);
   box-shadow: var(--shadow-xl);
   transition: all 0.3s ease;
   animation: float 6s ease-in-out infinite;
