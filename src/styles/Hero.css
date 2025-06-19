@@ -293,6 +293,12 @@ section#home {
     height: 44px;
     font-size: var(--font-size-base);
   }
+
+  .hero-resume-btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -339,6 +345,15 @@ section#home {
   .hero-badge {
     font-size: var(--font-size-xs);
     padding: var(--space-xs) var(--space-sm);
+  }
+
+  .hero-resume-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 90vw;
+    padding: 0.85em 1em;
   }
 }
 
@@ -407,39 +422,74 @@ section#home {
 .hero-resume-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
   margin-top: var(--space-md);
-  padding: 0.4em 0.6em;
-  font-size: var(--font-size-base);
+  padding: 0.65em 1.1em;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #222;
-  background: #fff;
-  border: 1.5px solid #d1d5db;
-  border-radius: 4px;
-  box-shadow: none;
+  color: #fff;
+  background: linear-gradient(90deg, #0a66c2 0%, #4f8cff 100%);
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px 0 rgba(10,102,194,0.10);
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s, transform 0.18s;
+  transition: background 0.4s, color 0.18s, box-shadow 0.18s, transform 0.18s;
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  max-width: 320px;
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-resume-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(270deg, #0a66c2, #4f8cff, #0a66c2);
+  background-size: 400% 400%;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.4s;
+  border-radius: 999px;
+  animation: resume-gradient-move 4s ease-in-out infinite;
+}
+
+.hero-resume-btn:hover::before,
+.hero-resume-btn:focus::before {
+  opacity: 1;
+}
+
+.hero-resume-btn span, .hero-resume-btn i {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-resume-btn i {
-  font-size: 1em;
-  transition: transform 0.18s, color 0.18s;
+  font-size: 1.2em;
+  transition: transform 0.25s, color 0.18s;
 }
 
-.hero-resume-btn:hover {
-  background: #f3f4f6;
-  color: #0a66c2;
-  border: 1.5px solid #0a66c2;
-  box-shadow: 0 2px 8px 0 rgba(10,102,194,0.10);
-  transform: translateY(-1px) scale(1.03);
+.hero-resume-btn:hover,
+.hero-resume-btn:focus {
+  color: #fff;
+  box-shadow: 0 6px 24px 0 rgba(10,102,194,0.18);
+  transform: translateY(-2px) scale(1.05);
 }
 
-.hero-resume-btn:hover i {
-  color: #0a66c2;
-  transform: translateY(1px) scale(1.1);
+.hero-resume-btn:hover i,
+.hero-resume-btn:focus i {
+  color: #fff;
+  transform: translateY(2px) scale(1.18) rotate(-10deg);
+}
+
+@keyframes resume-gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

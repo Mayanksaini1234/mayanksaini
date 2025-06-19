@@ -141,8 +141,8 @@ body.dark .skill-badge.outlined, .darkTheme .skill-badge.outlined {
     margin-bottom: 0.7rem;
   }
   .skill-badge {
-    font-size: 0.92rem;
-    padding: 0.55em 0.9em;
+    font-size: 1.08rem;
+    padding: 0.8em 1.5em;
   }
 }
 
@@ -152,8 +152,8 @@ body.dark .skill-badge.outlined, .darkTheme .skill-badge.outlined {
     margin-bottom: 0.3rem;
   }
   .skill-badge {
-    font-size: 0.75rem;
-    padding: 0.35em 0.7em;
+    font-size: 0.92rem;
+    padding: 0.6em 1.1em;
   }
 }
 

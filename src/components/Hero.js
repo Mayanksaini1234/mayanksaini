@@ -46,7 +46,7 @@ function Hero() {
             </a>
           </div>
           <a
-            href="https://docs.google.com/document/d/1nzW8s7V0hkdsE2khSsHDWYZmOdIPHNy8jpmaSAGLzDI/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1f3_HY64S4v45XjdUgTMGjIlukKgrA7fu/view?usp=sharing"
             className="hero-resume-btn"
             target="_blank"
             rel="noopener noreferrer"
